@@ -1,6 +1,2 @@
-exports.DATABASE_URL = process.env.DATABASE_URL ||
-                       global.DATABASE_URL ||
-                       (process.env.NODE_ENV === 'production' ?
-                            'mongodb://localhost/shopping-list' :
-                            'mongodb://localhost/shopping-list-dev');
+exports.DATABASE_URL = 'mongodb://shoppinguser:shop@ds159507.mlab.com:59507/mongo-shopping-app';
 exports.PORT = process.env.PORT || 8080;
